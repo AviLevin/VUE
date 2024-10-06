@@ -1,0 +1,29 @@
+specVersion: '1.0'
+metadata:
+    name: vue-app-crm-disc
+type: application
+customConfiguration:
+    deployer:
+        type: sap-netweaver
+        sourcePath: dist/ # Path to the project to be deployed
+        resources:
+            excludes:
+                - 'dist/path_to_excluded/**'
+        connection:
+            url: http://gsaperd01.mami.gov.il:8000
+            # proxy: https://my.proxy.com:43000
+            strictSSL: false
+            # SSLCertificatePath: /certs/my-ssl-certificate.pem
+        credentials:
+            username: tshanik
+            password: Sk111132
+        abapRepository:
+            client: 100
+            language: EN
+            transportRequest: ERDK935009
+            package: ZCRM
+            bspApplication: ZCRM_DISC_VUE
+            bspApplicationText: CRM Vue App
+            method: odata
+            skipAdtValidations: true
+            appIndexCalculate: true

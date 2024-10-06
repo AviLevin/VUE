@@ -1,0 +1,19 @@
+{
+    "cwd": "./dist",
+    "files": "**/*.*",
+    "server": "{YOUR_HOST}",
+    "client": "100",
+    "testMode": false,
+    "user": "{YOUR_USER}",
+    "pwd": "{YOUR_PASSWORD}",   
+    "useStrictSSL": false,
+    "language": "en",
+    "package": "{BSP_APP_PACKAGE}",
+    "bspContainer": "{BSP_APP_NAME}",
+    "bspContainerText": "{REPLACE_WITH_APP_DESCRIPTION}",
+    "transportNo": "",
+    "createTransport": false,
+    "transportText": "",
+    "transportUseLocked": false,
+    "transportUseUserMatch": false
+}
